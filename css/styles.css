@@ -115,7 +115,7 @@ hr {
 }
 
 hr:not([size]) {
-  height: 1px;
+  /* height: 1px; */
 }
 
 h6,
