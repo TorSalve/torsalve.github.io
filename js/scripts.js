@@ -30,14 +30,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 
-  function randImg() {
-    images = [
-      "https://raw.githubusercontent.com/TorSalve/torsalve.github.io/main/assets/img/me_again.jpg",
-      "https://raw.githubusercontent.com/TorSalve/torsalve.github.io/main/assets/img/me.jpg",
-    ];
-    var randomNum = Math.floor(Math.random() * images.length);
-    document.getElementById("profile-image").src = images[randomNum];
-  }
+  // function randImg() {
+  //   images = [
+  //     "https://raw.githubusercontent.com/TorSalve/torsalve.github.io/main/assets/img/me_again.jpg",
+  //     "https://raw.githubusercontent.com/TorSalve/torsalve.github.io/main/assets/img/me.jpg",
+  //   ];
+  //   var randomNum = Math.floor(Math.random() * images.length);
+  //   document.getElementById("profile-image").src = images[randomNum];
+  // }
 
-  randImg();
+  // randImg();
 });
