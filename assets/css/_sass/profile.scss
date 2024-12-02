@@ -3,7 +3,7 @@
 /* Profile */
 .profile {
   // border-style: solid;
-  // border-color: $light-gray;
+  // border-color: variables.$light-gray;
   margin-left: 2rem;
   margin-right: 1rem;
   margin-bottom: 2rem;
@@ -20,8 +20,8 @@
 }
 
 // adjust tile sizes on smaller screens
-@include media-query($on-phone) {
-  @media screen and (max-width: $on-phone) {
+@include variables.media-query(variables.$on-phone) {
+  @media screen and (max-width: variables.$on-phone) {
     .profile {
       width: 40%;
     }
