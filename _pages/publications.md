@@ -5,12 +5,10 @@ permalink: /publications/
 published: true
 ---
 
-Publications
+Highlighted publications
 ====
 
-{% bibliography %}
-
-<!-- <div class="PublicationContainer">
+<div class="PublicationContainer">
 
 	<div class="gallery">
 
@@ -46,4 +44,10 @@ Publications
 
 	</div>
 
-</div> -->
+</div>
+
+Publications
+====
+
+{% bibliography %}
+

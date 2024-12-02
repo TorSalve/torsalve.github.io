@@ -23,6 +23,7 @@
   width: 100%;
   overflow: hidden;
   display: table;
+  line-height: 1.3;
 
   @media (prefers-color-scheme: dark) {
     background: variables.$publicationbox-dark;
@@ -45,6 +46,7 @@
   font-size: 1.5rem;
   padding: 1rem;
   color: variables.$publicationbox-text;
+  line-height: 1.3;
 }
 
 .publicationTile:hover a span h2 {

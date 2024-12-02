@@ -21,7 +21,7 @@ $light-gray: gray;
 $text-color: #333;
 $background-color: #fdfdfd;
 $brand-color: #f9bf3f;
-$publicationbox-text: #1e2126;
+$publicationbox-text: #333;
 
 // Color scheme for light
 $body-bg: #fdfcf9; // #fdfdfd;
@@ -30,5 +30,5 @@ $text-color: #333;
 
 // Color scheme for dark modes
 $body-bg-dark: #0b0326; //#23272d;
-$publicationbox-dark: #98a0ac;
-$text-color-dark: #dee2e6; //#98a0ac;
+$publicationbox-dark: #f9bf3f;
+$text-color-dark: #fdfcf9; //#98a0ac;

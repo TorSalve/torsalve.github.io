@@ -4,7 +4,7 @@ permalink: /awards/
 published: true
 ---
 
-I am lucky to have strong and supportive group, that gives me the ability to grow. As part of my academic journey, I have met many inspiring people, thanks to you all.
+<!-- I am lucky to have strong and supportive group behind me, that gives me the ability to grow. As part of my academic journey, I have met many inspiring people, thanks to you all. -->
 
 # Awards
 - [**PhD Community Leadership Award 2023**](https://researchprofiles.ku.dk/en/prizes/phd-community-leadership-award), University of Copenhagen, Department of Computer Science
