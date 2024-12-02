@@ -1,0 +1,118 @@
+@use "variables";
+
+/* Publication Page */
+.PublicationContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
+}
+
+.publicationTile {
+  /* Minimum width of 200px and grow to fit available space */
+  flex: 1 0 200px;
+  border-radius: 15px;
+  background: variables.$publicationbox;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  display: table;
+
+  @media (prefers-color-scheme: dark) {
+    background: variables.$publicationbox-dark;
+  }
+}
+
+.publicationTile a {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.publicationTile a span {
+  display: flex;
+  justify-content: center;
+}
+
+.publicationTile a span h2 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: variables.$publicationbox-text;
+}
+
+.publicationTile:hover a span h2 {
+  display: none;
+}
+
+.publicationTile a span p {
+  display: none;
+}
+
+.publicationTile:hover a span p {
+  font-size: 1.2rem;
+  display: flex;
+  padding: 1rem;
+  color: variables.$publicationbox-text;
+}
+
+@include variables.media-query(variables.$on-phone) {
+  @media screen and (max-width: variables.$on-phone) {
+    .publicationTile {
+      height: 80px;
+    }
+
+    .publicationTile a span h2 {
+      font-size: 1.2rem;
+    }
+
+    .publicationTile:hover a span p {
+      display: none;
+    }
+
+    .publicationTile:hover a span h2 {
+      display: flex;
+    }
+  }
+}
+
+@include variables.media-query(variables.$on-palm) {
+  @media screen and (max-width: variables.$on-palm) {
+    .publicationTile {
+      height: 100px;
+    }
+
+    .publicationTile a span h2 {
+      font-size: 1.3rem;
+    }
+
+    .publicationTile:hover a span p {
+      display: none;
+    }
+
+    .publicationTile:hover a span h2 {
+      display: flex;
+    }
+  }
+}
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
+}
+
+//Based on: https://codepen.io/GeorgePark/pen/vdqYom

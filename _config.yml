@@ -1,0 +1,112 @@
+### your site title here
+
+title: Tor-Salve Dalsgaard
+description: Postdoc | University of Copenhagen
+
+# baseurl: / #name of GitHub repository
+domain: torsalve.xyz
+url: https://torsalve.xyz/ #custom url to be used instead of GitHub repository
+email: torsalve@di.ku.dk #
+
+# Pagination
+paginate: 4
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
+
+# Social media links in footer
+# twitter: "#"
+linkedin: "tor-salve-dalsgaard"
+# stackoverflow: "#"
+# github: "#"
+# researchgate: "#"
+orcid: "0000-0002-6819-4898"
+googlescholar: "RVTz6jgAAAAJ"
+# quora: "#"
+# instagram: "#"
+# facebook: "#"
+
+# https://github.com/inukshuk/jekyll-scholar
+scholar:
+  style: ./_bibliography/apa-6th-edition.csl
+  bibliography: publications.bib
+  sort_by: year,month
+  order: ascending
+  # group_by: year
+  # group_order: descending
+  bibtex_filters:
+    - latex
+    - markdown
+
+# Markdown
+highlighter: rouge
+markdown: kramdown
+
+# optimization -> compress.html
+compress_html:
+  clippings:
+    [
+      html,
+      div,
+      p,
+      ul,
+      td,
+      h1,
+      h2,
+      h3,
+      h4,
+      link,
+      meta,
+      footer,
+      nav,
+      img,
+      header,
+      hr,
+      br,
+      head,
+      style,
+      li,
+      ul,
+      ol,
+      time,
+      main,
+      script,
+      title,
+    ]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+#collection
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
+    order:
+      - shortPublication.md
+      - longerPublicationTitle.md
+      - redirect.md
+      - publication4.md
+      - publication5.md
+      - publication6.md
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - LICENSE.md
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-email-protect
+  - jekyll-target-blank
+  - jekyll-scholar
