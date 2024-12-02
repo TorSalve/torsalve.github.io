@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /awards
+permalink: /awards/
 published: true
 ---
 
