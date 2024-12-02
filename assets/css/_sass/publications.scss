@@ -18,14 +18,14 @@
   /* Minimum width of 200px and grow to fit available space */
   flex: 1 0 200px;
   border-radius: 15px;
-  background: variables.$publicationbox;
+  background: $publicationbox;
   height: 200px;
   width: 100%;
   overflow: hidden;
   display: table;
 
   @media (prefers-color-scheme: dark) {
-    background: variables.$publicationbox-dark;
+    background: $publicationbox-dark;
   }
 }
 
@@ -44,7 +44,7 @@
 .publicationTile a span h2 {
   font-size: 1.5rem;
   padding: 1rem;
-  color: variables.$publicationbox-text;
+  color: $publicationbox-text;
 }
 
 .publicationTile:hover a span h2 {
@@ -59,11 +59,11 @@
   font-size: 1.2rem;
   display: flex;
   padding: 1rem;
-  color: variables.$publicationbox-text;
+  color: $publicationbox-text;
 }
 
-@include variables.media-query(variables.$on-phone) {
-  @media screen and (max-width: variables.$on-phone) {
+@include media-query($on-phone) {
+  @media screen and (max-width: $on-phone) {
     .publicationTile {
       height: 80px;
     }
@@ -82,8 +82,8 @@
   }
 }
 
-@include variables.media-query(variables.$on-palm) {
-  @media screen and (max-width: variables.$on-palm) {
+@include media-query($on-palm) {
+  @media screen and (max-width: $on-palm) {
     .publicationTile {
       height: 100px;
     }
