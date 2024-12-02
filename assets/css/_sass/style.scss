@@ -4,6 +4,7 @@
 html,
 body {
   height: 100%;
+  text-align: justify;
 }
 
 body {
@@ -218,5 +219,10 @@ blockquote {
 }
 
 .bibliography {
-  font-size: smaller;
+  font-size: variables.$small-font-size;
+  list-style-type: disc;
+
+  li {
+    padding-bottom: 10px;
+  }
 }
