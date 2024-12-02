@@ -1,11 +1,9 @@
-### your site title here
-
 title: Tor-Salve Dalsgaard
 description: Postdoc - University of Copenhagen
 
 baseurl: torsalve.github.io #name of GitHub repository
 domain: torsalve.xyz
-url: https://torsalve.xyz/ #custom url to be used instead of GitHub repository
+url: torsalve.xyz #custom url to be used instead of GitHub repository
 email: torsalve@di.ku.dk #
 
 # Pagination
