@@ -3,7 +3,7 @@
 ---
 
 @charset "utf-8";
-@use "sass:meta";
+// @use "sass:meta";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 // Do not make any changes to this file. Go to /_sass and find the appropriate SCSS file and make changes there.
@@ -11,11 +11,20 @@
 // JN: For now, split @import to anable conditional import of CSS. Also. @import may be deprecated soon so plan
 // for this change
 
-@include meta.load-css("variables");
-@include meta.load-css("footer-social");
-@include meta.load-css("publications");
-@include meta.load-css("profile");
-@include meta.load-css("footer");
-@include meta.load-css("style");
-@include meta.load-css("google-fonts");
-@include meta.load-css("syntax-highlighting");
+// @include meta.load-css("variables");
+// @include meta.load-css("footer-social");
+// @include meta.load-css("publications");
+// @include meta.load-css("profile");
+// @include meta.load-css("footer");
+// @include meta.load-css("style");
+// @include meta.load-css("google-fonts");
+// @include meta.load-css("syntax-highlighting");
+
+@import "variables";
+@import "footer-social";
+@import "publications";
+@import "profile";
+@import "footer";
+@import "style";
+@import "google-fonts";
+@import "syntax-highlighting";
