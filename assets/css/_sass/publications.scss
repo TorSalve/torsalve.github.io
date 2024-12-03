@@ -19,7 +19,7 @@
   flex: 1 0 200px;
   border-radius: 15px;
   background: variables.$publicationbox;
-  height: 200px;
+  // min-height: 400px;
   width: 100%;
   overflow: hidden;
   display: table;
@@ -34,34 +34,49 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  cursor: pointer;
+  // cursor: pointer;
+  color: variables.$publicationbox-text;
 }
 
-.publicationTile a span {
+.publicationTile a .content {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
+  padding: 0.5rem;
 }
 
-.publicationTile a span h2 {
-  font-size: 1.5rem;
-  padding: 1rem;
-  color: variables.$publicationbox-text;
+.publicationTile a .title h3 {
+  font-size: 1.2rem;
+  padding: 0.5rem;
   line-height: 1.3;
 }
 
-.publicationTile:hover a span h2 {
-  display: none;
+// .publicationTile:hover a .title {
+//   display: none;
+// }
+
+.publicationTile a .description {
+  p {
+    margin: 0;
+    font-size: variables.$small-font-size;
+  }
 }
 
-.publicationTile a span p {
-  display: none;
-}
+// .publicationTile:hover a .description {
+//   font-size: 1.2rem;
+//   display: flex;
+//   padding: 0.2rem 1rem 1rem 1rem;
+//   color: variables.$publicationbox-text;
+// }
 
-.publicationTile:hover a span p {
-  font-size: 1.2rem;
-  display: flex;
-  padding: 1rem;
-  color: variables.$publicationbox-text;
+.publicationTile a .publication-image {
+  max-width: 90%;
+  max-height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  background: variables.$background-color;
 }
 
 @include variables.media-query(variables.$on-phone) {
@@ -70,16 +85,8 @@
       height: 80px;
     }
 
-    .publicationTile a span h2 {
+    .publicationTile a .title {
       font-size: 1.2rem;
-    }
-
-    .publicationTile:hover a span p {
-      display: none;
-    }
-
-    .publicationTile:hover a span h2 {
-      display: flex;
     }
   }
 }
@@ -90,16 +97,8 @@
       height: 100px;
     }
 
-    .publicationTile a span h2 {
+    .publicationTile a .title {
       font-size: 1.3rem;
-    }
-
-    .publicationTile:hover a span p {
-      display: none;
-    }
-
-    .publicationTile:hover a span h2 {
-      display: flex;
     }
   }
 }

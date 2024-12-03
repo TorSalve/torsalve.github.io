@@ -8,6 +8,8 @@ published: true
 Highlighted publications
 ====
 
+
+
 <div class="PublicationContainer">
 
 	<div class="gallery">
@@ -15,30 +17,27 @@ Highlighted publications
 
   {% for publication in site.publications %}
 
-  {% if publication.redirect %}
   <div class="publicationTile">
-          <a href="{{ publication.redirect }}" target="_blank">
-          <span>
-              <h2>{{ publication.title }}</h2>
-              <br/>
-              <p>{{ publication.description }}</p>
-          </span>
-          </a>
+    {% if publication.redirect %}
+      <a href="{{ publication.redirect }}" target="_blank">
+    {% else %}
+      <a href="{{ publication.url | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+      <div class="content">
+        <div class="title">
+          {% if publication.image %}
+          <img class="publication-image" src="{{ publication.image | prepend: '/assets/images/publications/' | prepend: site.baseurl | prepend: site.url }}">
+          {% endif %}
+          <h3>{{ publication.title }}</h3>
+        </div>
+        <div class="description">
+          <p>{{ publication.description }}</p>
+        </div>
+      </div>
+    </a>
   </div>
 
-  {% else %}
-
-  <div class="publicationTile">
-          <a href="{{ publication.url | prepend: site.baseurl | prepend: site.url }}">
-          <span>
-              <h2>{{ publication.title }}</h2>
-              <br/>
-              <p>{{ publication.description }}</p>
-          </span>
-          </a>
-  </div>
-
-  {% endif %}
+  
 
   {% endfor %}
 
