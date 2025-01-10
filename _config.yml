@@ -31,7 +31,8 @@ scholar:
   bibliography: publications.bib
   sort_by: year,month
   order: descending
-  # group_by: year
+  group_by: type
+  type_order: [book, article, inproceedings, phdthesis, misc]
   # group_order: descending
   bibliography_template: reference
 
