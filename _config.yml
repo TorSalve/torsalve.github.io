@@ -5,7 +5,7 @@ description: Postdoc @ University of Copenhagen
 
 baseurl: torsalve.github.io #name of GitHub repository
 domain: torsalve.xyz
-url: torsalve.xyz #custom url to be used instead of GitHub repository
+url: https://torsalve.xyz #custom url to be used instead of GitHub repository
 email: torsalve@di.ku.dk #
 
 # Pagination
