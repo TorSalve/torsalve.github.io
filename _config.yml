@@ -4,6 +4,7 @@ title: Tor-Salve Dalsgaard
 description: Postdoc @ University of Copenhagen
 
 baseurl: torsalve.github.io #name of GitHub repository
+# baseurl:
 domain: torsalve.xyz
 url: https://torsalve.xyz #custom url to be used instead of GitHub repository
 email: torsalve@di.ku.dk #
@@ -85,12 +86,10 @@ collections:
     output: true
     permalink: /publications/:name/
     order:
-      - shortPublication.md
-      - longerPublicationTitle.md
-      - redirect.md
-      - publication4.md
-      - publication5.md
-      - publication6.md
+      - Unified-Model.md
+      - HapticMagnetism.md
+      - HapticMapping.md
+      - ObjectSelectionAndManipulation.md
 
 sass:
   sass_dir: /assets/css/_sass

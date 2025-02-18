@@ -31,6 +31,7 @@ Highlighted publications
           <h3>{{ publication.title }}</h3>
         </div>
         <div class="description">
+          <p><i>{{ publication.year }}</i></p>
           <p>{{ publication.description }}</p>
         </div>
       </div>

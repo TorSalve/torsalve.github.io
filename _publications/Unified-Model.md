@@ -6,6 +6,7 @@ description: These experiences are rich and complex in nature and thus challengi
 # published: false
 date: 09.01.2025
 doi: 10.1145/3711842
+year: 2025
 ---
 
 In this paper, we examine the current state of Haptic Experience (HX) research, a subfield of User Experience (UX) design that focuses on the sense of touch in human-computer interaction. 
