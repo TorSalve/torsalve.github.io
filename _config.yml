@@ -3,8 +3,8 @@
 title: Tor-Salve Dalsgaard
 description: Postdoc @ University of Copenhagen
 
-baseurl: torsalve.github.io #name of GitHub repository
-# baseurl:
+# baseurl: torsalve.github.io #name of GitHub repository
+baseurl:
 domain: torsalve.xyz
 url: https://torsalve.xyz #custom url to be used instead of GitHub repository
 email: torsalve@di.ku.dk #
@@ -18,13 +18,14 @@ paginate_path: /blog/page:num/
 # twitter: "#"
 linkedin: "tor-salve-dalsgaard"
 # stackoverflow: "#"
-# github: "#"
+github: "TorSalve"
 # researchgate: "#"
 orcid: "0000-0002-6819-4898"
 googlescholar: "RVTz6jgAAAAJ"
 # quora: "#"
 # instagram: "#"
 # facebook: "#"
+bluesky: "torsalve.bsky.social"
 
 # https://github.com/inukshuk/jekyll-scholar
 scholar:
