@@ -3,14 +3,15 @@ layout: post
 title: A Unified Model for Haptic Experience
 description: These experiences are rich and complex in nature and thus challenging to design.
 # redirect: https://doi.org/10.1145/3711842
-# published: false
+published: true
 date: 09.01.2025
 doi: 10.1145/3711842
+publication: Transactions on Computer-Human Interaction (TOCHI)
 year: 2025
 ---
 
 In this paper, we examine the current state of Haptic Experience (HX) research, a subfield of User Experience (UX) design that focuses on the sense of touch in human-computer interaction. 
-We analyse existing HX models, identify limitations in their application to haptic experiences, and propose a Unified Model for Haptic Experience that integrates concepts from UX, positive psychology, and haptics research. 
+We analyse existing HX models, identify limitations in their application to haptic experiences, and propose a Unified Model for Haptic Experience that integrates concepts from UX, positive psychology, and haptics research.
 This new model considers the pragmatic, hedonic, and eudaimonic qualities of haptic interactions, as well as user needs and contextual factors. 
 We also critique prevalent research methodologies, advocating for a shift from a results-centric to a model-centric approach that emphasises a more holistic understanding of haptic experiences. 
 Finally, we propose future research directions for refining the model and exploring ethical implications.

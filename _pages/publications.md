@@ -14,8 +14,8 @@ Highlighted publications
 
 	<div class="gallery">
 
-
   {% for publication in site.publications %}
+  {% if publication.published %}
 
   <div class="publicationTile">
     {% if publication.redirect %}
@@ -32,14 +32,14 @@ Highlighted publications
         </div>
         <div class="description">
           <p><i>{{ publication.year }}</i></p>
-          <p>{{ publication.description }}</p>
+          <p><small>{{ publication.description }}</small></p>
         </div>
       </div>
     </a>
   </div>
 
   
-
+  {% endif %}
   {% endfor %}
 
 	</div>

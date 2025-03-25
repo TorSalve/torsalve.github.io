@@ -87,6 +87,7 @@ collections:
     output: true
     permalink: /publications/:name/
     order:
+      - Ultrasound-Chemicals.md
       - Unified-Model.md
       - HapticMagnetism.md
       - HapticMapping.md

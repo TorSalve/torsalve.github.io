@@ -5,11 +5,12 @@ layout: default
 <h1 class="post-headline">{{page.title}}</h1>
 <p class="meta">
   <small>{{page.date | date: '%B %d, %Y'}}</small>
-  {% if page.doi %} —
-  <small
-    >doi:
+  {% if page.publication %} |
+  <small>{{page.publication}}</small>
+  {% endif %} {% if page.doi %} |
+  <small>
     <a href="https://doi.org/{{page.doi}}" target="_blank"
-      >{{page.doi}}</a
+      >doi.org/{{page.doi}}</a
     ></small
   >
   {% endif %}
