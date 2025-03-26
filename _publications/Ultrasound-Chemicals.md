@@ -4,7 +4,7 @@ title: Ultrasound Delivery and Modulation of Chemical Haptic Stimuli
 description: Ultrasound-based system for non-contact delivery and modulation of chemical stimulants to the skin.
 # redirect: https://doi.org/10.1038/s41598-025-94463-7
 published: true
-date: 24.03.2025
+date: 25.03.2025
 doi: 10.1038/s41598-025-94463-7
 publication: Scientific Reports
 year: 2025
@@ -34,17 +34,19 @@ The key findings indicate that chemical stimulants can effectively induce haptic
 
 Read the full paper here: [10.1038/s41598-025-94463-7](https://doi.org/10.1038/s41598-025-94463-7).
 
-<!-- Cite this work using the following:
+Cite this work using the following:
 ```
-@article{10.1145/3711842,
- author = {Dalsgaard, Tor-Salve and Schneider, Oliver},
- title = {A Unified Model for Haptic Experience},
- year = {2025},
- publisher = {Association for Computing Machinery},
- address = {New York, NY, USA},
- issn = {1073-0516},
- doi = {10.1145/3711842},
- journal = {ACM Trans. Comput.-Hum. Interact.},
- month = jan,
+@article{10.1038/s41598-025-94463-7,
+	title        = {Ultrasound can deliver chemical stimulants to the skin and modulate their perception},
+	author       = {Dalsgaard, Tor-Salve and Bhatia, Arpit and Gao, Lei and Hirayama, Ryuji and Subramanian, Sriram and Bergström, Joanna and Hornbæk, Kasper},
+	year         = 2025,
+	month        = {mar},
+	journal      = {Scientific Reports},
+	publisher    = {Nature Publishing Group},
+	volume       = 15,
+	number       = 1,
+	pages        = 9,
+	doi          = {10.1038/s41598-025-94463-7},
+	issn         = {2045-2322},
 }
-``` -->
+```
