@@ -7,6 +7,7 @@ published: true
 date: 25.03.2025
 doi: 10.1038/s41598-025-94463-7
 publication: Scientific Reports
+image: chemical-stimulants-minified.png
 year: 2025
 ---
 

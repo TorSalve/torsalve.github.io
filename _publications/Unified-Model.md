@@ -7,6 +7,7 @@ published: true
 date: 09.01.2025
 doi: 10.1145/3711842
 publication: Transactions on Computer-Human Interaction (TOCHI)
+image: unified-model-minified.png
 year: 2025
 ---
 
